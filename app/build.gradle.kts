@@ -52,7 +52,13 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.navigation.fragment)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Add Glide dependency
+    implementation("com.github.bumptech.glide:glide:4.16.0") // Or the latest version
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0") // If you use Glide's annotation processing
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0") // Or the latest version
 }
